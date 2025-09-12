@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8"/>
+ <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>
+   Happy Birthday Rajanya Nandi
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczNMl1ovNROAPDSeP6fG2wx15qcibWnV-eBovybdiXoxJ8sxkGTdhrSNPIw9WtEp5vww649idh5iaQhAhwa32QyAYmK0irqczaYE1B_cY9j7CSkzCzvt_o_ogFHZpRUpKuF_i8mzTN5B7CpW32EkIFdP8A=w622-h776-s-no-gm?authuser=0" size="32x32">
+  <style>
+   body {
+		background-image: url("https://lh3.googleusercontent.com/pw/AP1GczM-nCb7jB2OkvMfAxgGV0EH2TA4GGiHmGqMWxwOjf9-ORx95C3cG8H0G2eOCJyuflwQgrRPback2sDaBMpVNvRI500OVeztgy75_V4Muqx0lMAfxhtD7Rs1X-p8bAqr0VK0LOIgdeviR0-UBWZNJiMRhQ=w612-h790-s-no-gm?authuser=0"); 
+		/*background-image: url("C:/Users/SWADESH NANDI/Downloads/IMG-20250124-WA0006.jpg"); */
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+        
+        font-family: 'Roboto', sans-serif;
+		overflow: auto;
+		background-color: green-800;
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none;    /* Firefox */
+        -ms-user-select: none;     /* Internet Explorer/Edge */
+        user-select: none; 		
+		
+		a:hover
+		{
+           background-color: green;
+		}
+		   
+        /* background: linear-gradient(
+				to right,
+				#5d26c1,
+				#a17fe0,
+				#59c173
+			); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card {
+		background-color: white;
+		
+		display: inline-block;
+	}
+.player-size {
+    overflow:hidden;
+    width:48px !important;
+    height:55px;
+	  background: #F1F3F4;
+	  border-radius: 500px;
+    z-index:999999999999999;
+} 
+
+canvas#confetti {
+  position: fixed;
+  width: 1%;
+  height: 1%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+/* CSS */
+.button-53 {
+  background-color: #3dd1e7;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+
+@keyframes text-flicker {
+    0% {
+     opacity: 1;
+	 color: #00ffff; 
+    }
+    20% {
+     opacity: 0.5;
+	 color: #ff0000 ;
+    }
+	40% {
+     opacity: 0.4;
+	 color: #7cfc00 ;
+    }
+	60% {
+     opacity: 0.6;
+	 color: #808080 ;
+    }
+	80% {
+     opacity: 0.8;
+	 color:#0000ff ;
+    }
+	
+    100% {
+     opacity: 1;
+	 color: #efcc00 
+    }
+   }
+   .flicker {
+    animation: text-flicker 10.5s infinite;
+   }
+
+  </style>
+ </head>
+ 
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            // Disable Ctrl+C and Ctrl+U
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'u')) {
+                e.preventDefault();
+            }
+        });
+		const express = require('express');
+		const app = express();
+
+		app.get('/set-cookie', (req, res) => {
+		res.cookie('sessionId', 'your-session-id', {
+        httpOnly: true, // Prevents JavaScript access
+        secure: true,   // Ensures the cookie is sent only over HTTPS
+        sameSite: 'Strict' // Controls cross-origin requests
+		});
+		res.send('Secure cookie set!');
+		});
+
+		app.listen(3000, () => {
+		console.log('Server is running on https://localhost:3000');
+		});
+    </script>
+ 
+ 
+ 
+ <body> <!-- class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"> <!-- oncontextmenu="return false" -->
+ 
+	<!--<audio controls autoplay loop>
+	<!--<source src="C:/Users/SWADESH NANDI/Videos/Movies/screen-20230309-142912~2.mp4" type="audio/mp4"> 
+	<source src="https://drive.google.com/uc?export=open&id=1I4RNEQzml72rWkOo9ABsn9hBTMyX3wWP" type="audio/mp3"> 
+	<source src="https://www.youtube.com/watch?v=roz9sXFkTuE" type="audio/mp4">
+	</audio> -->
+
+ 
+  <header class="bg-blue-500 text-white p-5">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-3xl font-bold">
+     HAPPY BIRTHDAY TO YOU
+    </h1>
+	<div class="text-yellow-300 text-2xl font-bold"id="dateTime"></div>
+    <nav>
+    <ul class="flex space-x-3">
+		<li>
+			<a class="hover:underline" href="#home">
+			Home
+			</a>
+		</li>
+		<li>
+			<a class="hover:underline" href="#about">
+			About
+			</a>
+		</li>
+		<li>
+			<a class="hover:underline" href="#event">
+			Events
+			</a>
+		</li>
+     
+		<li>
+       <a class="hover:underline" href="" target="PDF">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="https://meet.google.com/hza-byma-eqp" target="BIRTHDAY Contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="container mx-auto p-8">
+   <section class="text-center mb-12">
+    <section class="text-center my-8" id="home">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+		<!--<img  height="180" width="410" class="mx-auto mb-4 " src="https://storage.googleapis.com/a1aa/image/8nV4evwQzE35AygrpWdYnI2YXmnfMeT4WG4t9SVnfusdVPFPB.jpg" alt="A birthday cake with candles"/> -->
+		<!-- BIRTHDAY person picture -->
+		<img  HEIGHT='60' WIDTH='400' class="mx-auto mb-4 "  src="https://lh3.googleusercontent.com/pw/AP1GczNMl1ovNROAPDSeP6fG2wx15qcibWnV-eBovybdiXoxJ8sxkGTdhrSNPIw9WtEp5vww649idh5iaQhAhwa32QyAYmK0irqczaYE1B_cY9j7CSkzCzvt_o_ogFHZpRUpKuF_i8mzTN5B7CpW32EkIFdP8A=w622-h776-s-no-gm?authuser=0" alt="birthday person photo" />
+		
+		<img  height="580" width="410" class="mx-auto mb-4 " src="https://lh3.googleusercontent.com/pw/AP1GczM5yr49OC1KITzrUy_xkO_xxClk1aCpHrA4CHLoM0nvl9uCHzD4TCRbuuqZZBJh7t2j2vXEgNpjJdw6mX-5UH_mIaJNytJpCcgHNFv0QlWtwPr9HvtIqaZ9kQhtp9TF7Yfv313fkJlR56fTKo1UJzn1=w491-h466-s-no-gm?authuser=0"/>
+    </div>
+	<br><br>
+	<div class="hover:bg-green-200">
+	
+		<h1 class="text-4xl font-bold mb-2 flicker">
+			🎈🌸 Happy Birthday to You 🌸🎈
+		</h1> 
+		
+		<h1 class="text-4xl font-bold text-yellow-400 mb-2">
+			💐🎉Happy Birthday to You, Rajanya  🎉💐
+		</h1>
+		
+		<h3 class="text-4xl font-bold text-white mb-2">
+			DOB: 13/09/2007
+		</h3>	
+		
+		<h3 class="text-4xl font-bold text-green-700 mb-2">
+			Age: 18
+		</h3>
+	</div>
+	</section>
+<!-- Play song in website -->	
+<br><br>
+<!--<iframe id="myAudio"  class="bg-white-600 items-left-side" src="https://drive.google.com/file/d/1I5H64nWDzSl88Ms_hwAf7P1JiPQaqqsg/preview" width="300" height="60" allow=" autoplay" loop ></iframe> -->
+<br><br>
+	<section class="text-center my-8" id="about">
+		<div class=" hover:bg-white">
+		<br>
+			<h2 class="text-2xl font-bold text-pink-600 mb-1">শুভ জন্মদিন<br>˜˜˜˜˜˜˜˜˜˜˜˜˜</h2>
+			<p class="text-2xl text-yellow-400 mb-2">
+				নতুন সকাল, নতুন দিন,
+				<br>
+				আজ তোর জন্মদিন,
+				<br>
+				এলো খুশির শুভদিন,
+				<br>
+				আরো একটা বছর করলি তুই পার।
+				<br>
+				সুস্থ থাকিস, ভালো থাকিস,
+				<br>
+				তোর মনের স্বপ্ন গুলো হোক রঙিন।
+				<br>
+				দুঃখ যেন না আসে কোন দিন,
+				<br>
+				সর্বদা থাকিস, আনন্দে রঙিন
+				<br>
+				তোকে জানায় শুভ জন্মদিনের শুভেচ্ছা।
+			</p>
+		</div> 
+	</section > 
+	
+	<canvas id="confetti"></canvas>
+    <button id="button" class="button-53" role="button">click for Celebrate!!!</button>
+	
+    <button class="btn btn-accent">
+     <a class="hover:bg-white text-4xl" href="" target="PDF">Gallery</a>
+    </button> 
+	
+   
+    <section class="text-center my-8" id="event">
+		<div class="grid grid-cols-4 grid-rows-3 md:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-16 ">
+			 
+			<!-- =======================================NEW SETUP  CREATE ================================================-->
+	
+			<div class="card bg-base-100 p-5 w-96 text-center hover:bg-yellow-400">
+				<!--<figure>
+					<img
+					src="https://lh3.googleusercontent.com/pw/AP1GczOAIfdLnEjLxvNK-pWl2F42Q3kgNkP-yiGeBi2-nryb5qk7_IrPG3b-XQDZ2YtzifEC9x-08O8EZt1plHBqoBhuOfQ_lgsHstb1N5tJTND64dut0sRZ12w451SicZnC514m4wRfRVj0TGxn8uISlvyuqw=w1152-h648-s-no-gm?authuser=0"
+					alt="picture1.0"
+					height="500"/>
+				</figure>--> <!-- use for dubale picture in one card -->
+				<figure>
+					<img
+					src="https://lh3.googleusercontent.com/pw/AP1GczMvmqwtm0Jl0yw4ZfdjI8APuJvYlXjaKf5NB_o9K_FXsMxC1cMVEmaHQj7UpGTL4DuquOmMp867mohsM4vqzWbIOgWh3opFuArQfA_la0ik42wRkr9sxcXI29e77a9y_DPGXZJwO2FZaSNhdihAYaxA=w1081-h811-s-no-gm?authuser=0"
+					alt="picture1.1"
+					height="500"/>
+				</figure>
+				<div>
+					<h2 class="text-lg text-gray-700"><br>
+					   <b>Our Picnic 2017</b>
+					</h2>
+				</div>
+			</div>  
+	
+			<div class="card bg-white p-5 w-96 shadow-xl rounded-lg shadow-lg text-center hover:bg-pink-400 ">
+				<figure>
+					<img
+					src="https://storage.googleapis.com/a1aa/image/NqQHrRIoVe2SPqui85eNYKRrJ5rb4tUZxfpBwEJkLa2pqninA.jpg"
+					alt=""/>
+				</figure>
+				<div>
+					<p class="text-lg text-gray-700"><br>
+					   May your birthday be the start of a year filled with good luck, good health, and much happiness.
+					</p>
+				</div>
+			</div>
+		    
+			<div class="card p-5 w-96 shadow-xl rounded-lg shadow-lg text-center hover:bg-cyan-300">
+				<figure>
+					<img 
+					alt="A birthday card with a gift box and ribbon" class="mx-auto mb-4 rounded-lg w-full object-cover" 
+					src="https://storage.googleapis.com/a1aa/image/nkxvyLmU2laoNhYtUZrHzLNkUCIjTf1RK9CcOtQJoMSt6p4JA.jpg" />
+				</figure>
+				<div>
+					<p class="text-lg text-gray-700">
+					  Wishing you a day filled with love and cheer. May you be surrounded by all your loved ones. Happy Birthday!
+					</p>
+				</div>
+			</div>
+
+			<div class="card  p-5 w-96 shadow-xl rounded-lg shadow-lg text-center hover:bg-red-400">
+				<figure>
+					<img 
+					alt="A birthday card with a party hat and streamers" class="mx-auto mb-4 rounded-lg w-full object-cover" 
+					src="https://storage.googleapis.com/a1aa/image/CaL9ZWZQwr5dMlEeCrN0hcDWYN1vkJgDWxzVUXcF2IKs6p4JA.jpg"/>	
+				</figure>
+				<div>
+					<p class="text-lg text-gray-700">
+					  On your special day, I wish you all the very best, all the joy you can ever have, and may you be blessed abundantly today, tomorrow, and the days to come!
+					</p>
+				</div>
+			</div>
+
+			<div class="card p-5 w-96 shadow-xl rounded-lg shadow-lg text-center hover:bg-green-400">
+				<figure>
+					<img 
+					alt="A birthday card with a cupcake and candle" class="mx-auto mb-4 rounded-lg w-full object-cover" 
+					src="https://storage.googleapis.com/a1aa/image/E6cjGsfDxg37ZyiWayXYmcAtAug70GejxHCF3K8Ji8zV1TxTA.jpg"/>
+				</figure>
+				<div>
+					<p class="text-lg text-gray-700"><br>
+					  Happy Birthday! I hope your day is filled with lots of love and laughter! May all of your birthday wishes come true.
+					</p>
+				</div>
+			</div>		
+
+			<div class="card p-5 w-96 shadow-xl rounded-lg shadow-lg text-center hover:bg-blue-400">
+				<figure>
+					<img 
+					alt="A birthday card with colorful balloons" class="mx-auto mb-4 rounded-lg w-full object-cover" 
+					src="https://storage.googleapis.com/a1aa/image/QfU778deZtqerJ9E4qdJhNLJ4356YWlDYG5PLzGGHBDyqninA.jpg"/>
+				</figure>
+				<div>
+					<p class="text-lg text-gray-700"><br>
+					  Sending you smiles for every moment of your special day…Have a wonderful time and a very happy birthday!
+					</p>
+				</div>
+			</div>
+			
+			<div class="card p-5 w-96 shadow-xl rounded-lg shadow-lg text-center hover:bg-gray-400">
+				<figure>
+					<img 
+					alt="A birthday card with a birthday cake and candles" class="mx-auto mb-4 rounded-lg w-full object-cover" 
+					src="https://storage.googleapis.com/a1aa/image/DsMEoLhv4EZeCKQeRfeqp3yfa4rZrJvqSkt7eRQ3CK0lV9U8E.jpg"/>
+				</figure>
+				<div>
+					<p class="text-lg text-gray-700"><br>
+					  Hope your special day brings you all that your heart desires! Here’s wishing you a day full of pleasant surprises! Happy birthday!
+					</p>
+				</div>
+			</div>
+			
+			<!-- <div class="card p-5 w-96 shadow-xl rounded-lg shadow-lg text-center hover:bg-pink-400">
+				<figure>
+					<img
+					src="https://lh3.googleusercontent.com/pw/AP1GczP_a_Dm5imP4eFOPH-MlR7q6wiQJCItNicz_fjJSukoZUNn-oq_pOR-VjI1hwO3a_Vy0byiWMAcnbc-b110hkCZZOJQiBb3zxi9n1sYU5yy1xm_afwt4C_KhXEv7mH7pF8zU--oCwYHYp12vya938TN3w=w1156-h650-s-no-gm?authuser=0"
+					alt="picture2"/>
+				</figure>
+				<figure>
+					<img
+					src="https://lh3.googleusercontent.com/pw/AP1GczMVE2aeOlwAOnZmg2OvVEdyPAPIPhO1SmkV6YwuGoEaqhSjdcaW5L-12gPV1VlFb-yqfCAumsG9YJeh1y8pjOsauROeAcvgr6BWKrdeRhPzjwVu1mbsnLsPpw5DAfre6r22NuyIZNdDhkPxO4S1zZIyTQ=w1053-h790-s-no?authuser=0"
+					alt="picture2.1"/>
+				</figure>
+				<div>
+					<p class="text-lg text-gray-700"><br>
+					   <b>Our Science family</b>
+					</p>
+				</div>
+			</div>	-->	
+		 
+        </div>
+    </section>
+	
+    </main>
+        <footer class="bg-pink-600 text-white p-4 mt-8 text-center">
+        <p>&copy; 2025 Happy Birthday Wishes. All rights reserved.</p>
+		<div class="flex justify-center space-x-4 mt-4">
+             <a class="hover:text-gray-400" href="https://m.facebook.com/swadesh.nandi.56/" target="facebook">
+            <i class="fab fa-facebook-f">
+            </i>
+           </a>
+		   
+		    <a class="hover:underline" href="https://www.instagram.com/swadesh.nandi/" target = "instagram"> 
+				<i class="fab fa-instagram">
+				</i>
+			</a>
+			
+					
+		<a class="hover:underline" href="tel:91-9749056152">
+         
+            <p><i class="fas fa-phone mr-3"></i>9749056152</p>
+		</a>
+         </div>
+		<div class="panel-footer items-right">
+		<img alt="logo" class="mx-auto rounded-full w-20 h-20" height="100" src="https://lh3.googleusercontent.com/pw/AP1GczOwNMpbXkLSCf63nR4jZyRVA6pDPmA2UN5oJzyqBf_P5GmRMc-Ed9WNVgoo6OGfn2ZErtN8zk2Zy0Q9LxAvdxjfzMbbnXS1abPMKSbLZWMux8CgtOme9ozyfSZw45z2WgZ3bVIGHEDedZQ_8gRwcgU=w640-h480-s-no-gm?authuser=0" width="80"/>
+      <p>Developed By : Swadesh Nandi</p>
+      </div>
+    </footer>
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+	<script>
+
+		const button = document.querySelector('#button');
+		const canvas = document.querySelector('#confetti');
+
+		const jsConfetti = new JSConfetti();
+
+		button.addEventListener('click', () => {
+		jsConfetti.addConfetti({
+        emojis: ['Happy','🌈', '🎉','Birthday', '💥', '✨','to', '🎂', '🌸','you','💐'],
+		}).then(() => jsConfetti.addConfetti())
+		})
+
+	</script>
+	
+	
+			<!--use for this script DATE AND TIME-->
+		<script>
+			function updateDateTime() {
+				const now = new Date();
+				const options = { 
+					year: 'numeric', 
+					month: 'long', //long
+					day: 'numeric', 
+					hour: '2-digit', 
+					minute: '2-digit', 
+					second: '2-digit',
+					hour24:  true
+				};
+				document.getElementById('dateTime').innerText = now.toLocaleString('en-US', options);
+			}
+
+			// Update the date and time immediately
+			updateDateTime();
+
+			// Update the date and time every second
+			setInterval(updateDateTime, 1000);
+		</script>
+
+ </body>
+</html>
+
