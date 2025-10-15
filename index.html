@@ -4,7 +4,7 @@
  <meta charset="utf-8"/>
  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>
-   Happy Birthday Rajanya Nandi
+   Happy Birthday Aditi Roy
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -13,189 +13,17 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczNMl1ovNROAPDSeP6fG2wx15qcibWnV-eBovybdiXoxJ8sxkGTdhrSNPIw9WtEp5vww649idh5iaQhAhwa32QyAYmK0irqczaYE1B_cY9j7CSkzCzvt_o_ogFHZpRUpKuF_i8mzTN5B7CpW32EkIFdP8A=w622-h776-s-no-gm?authuser=0" size="32x32">
-  <style>
-   body {
-		background-image: url("https://lh3.googleusercontent.com/pw/AP1GczM-nCb7jB2OkvMfAxgGV0EH2TA4GGiHmGqMWxwOjf9-ORx95C3cG8H0G2eOCJyuflwQgrRPback2sDaBMpVNvRI500OVeztgy75_V4Muqx0lMAfxhtD7Rs1X-p8bAqr0VK0LOIgdeviR0-UBWZNJiMRhQ=w612-h790-s-no-gm?authuser=0"); 
-		/*background-image: url("C:/Users/SWADESH NANDI/Downloads/IMG-20250124-WA0006.jpg"); */
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-        
-        font-family: 'Roboto', sans-serif;
-		overflow: auto;
-		background-color: green-800;
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none;    /* Firefox */
-        -ms-user-select: none;     /* Internet Explorer/Edge */
-        user-select: none; 		
-		
-		a:hover
-		{
-           background-color: green;
-		}
-		   
-        /* background: linear-gradient(
-				to right,
-				#5d26c1,
-				#a17fe0,
-				#59c173
-			); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.card {
-		background-color: white;
-		
-		display: inline-block;
-	}
-.player-size {
-    overflow:hidden;
-    width:48px !important;
-    height:55px;
-	  background: #F1F3F4;
-	  border-radius: 500px;
-    z-index:999999999999999;
-} 
-
-canvas#confetti {
-  position: fixed;
-  width: 1%;
-  height: 1%;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-  pointer-events: none;
-}
-
-/* CSS */
-.button-53 {
-  background-color: #3dd1e7;
-  border: 0 solid #e5e7eb;
-  box-sizing: border-box;
-  color: #000000;
-  display: flex;
-  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.75rem;
-  padding: 0.75rem 1.65rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none #000000 solid;
-  text-decoration-thickness: auto;
-  width: 100%;
-  max-width: 460px;
-  position: relative;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-53:focus {
-  outline: 0;
-}
-
-.button-53:after {
-  content: "";
-  position: absolute;
-  border: 1px solid #000000;
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
-}
-
-.button-53:hover:after {
-  bottom: 2px;
-  left: 2px;
-}
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-
-
-@keyframes text-flicker {
-    0% {
-     opacity: 1;
-	 color: #00ffff; 
-    }
-    20% {
-     opacity: 0.5;
-	 color: #ff0000 ;
-    }
-	40% {
-     opacity: 0.4;
-	 color: #7cfc00 ;
-    }
-	60% {
-     opacity: 0.6;
-	 color: #808080 ;
-    }
-	80% {
-     opacity: 0.8;
-	 color:#0000ff ;
-    }
-	
-    100% {
-     opacity: 1;
-	 color: #efcc00 
-    }
-   }
-   .flicker {
-    animation: text-flicker 10.5s infinite;
-   }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
  </head>
  
-    <script>
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
 
-        document.addEventListener('keydown', function(e) {
-            // Disable Ctrl+C and Ctrl+U
-            if (e.ctrlKey && (e.key === 'c' || e.key === 'u')) {
-                e.preventDefault();
-            }
-        });
-		const express = require('express');
-		const app = express();
-
-		app.get('/set-cookie', (req, res) => {
-		res.cookie('sessionId', 'your-session-id', {
-        httpOnly: true, // Prevents JavaScript access
-        secure: true,   // Ensures the cookie is sent only over HTTPS
-        sameSite: 'Strict' // Controls cross-origin requests
-		});
-		res.send('Secure cookie set!');
-		});
-
-		app.listen(3000, () => {
-		console.log('Server is running on https://localhost:3000');
-		});
-    </script>
+	<!-- right click loock-->
+	<script type="text/javascript" src="right_click.js" async="async"></script>
  
  
  
- <body> <!-- class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"> <!-- oncontextmenu="return false" -->
+ <body class="bg-green-200"> <!-- class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"> <!-- oncontextmenu="return false" -->
  
 	<!--<audio controls autoplay loop>
 	<!--<source src="C:/Users/SWADESH NANDI/Videos/Movies/screen-20230309-142912~2.mp4" type="audio/mp4"> 
@@ -229,7 +57,7 @@ canvas#confetti {
 		</li>
      
 		<li>
-       <a class="hover:underline" href="" target="PDF">
+       <a class="hover:underline" href="https://drive.google.com/file/d/1W9boq8NGxjxcxUCP5votkhuCrUlvPkqy/view?usp=sharing" target="PDF">
         Gallery
        </a>
       </li>
@@ -246,35 +74,36 @@ canvas#confetti {
    <section class="text-center mb-12">
     <section class="text-center my-8" id="home">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-		<!--<img  height="180" width="410" class="mx-auto mb-4 " src="https://storage.googleapis.com/a1aa/image/8nV4evwQzE35AygrpWdYnI2YXmnfMeT4WG4t9SVnfusdVPFPB.jpg" alt="A birthday cake with candles"/> -->
+		<img  height="180" width="410" class="mx-auto mb-4 " src="https://lh3.googleusercontent.com/pw/AP1GczMMzMbRyrFmOIbpHGWjGLYAKT3-agLLbh8pyyWoJwYPEY7oEkbLylLD2_QZ82sqTvl1xVjcHF41IphQWL2l6G8yg7Kji3uYoIPn5tQz_XhlI0CCiyhaO4l0swOGMz_133_Usw0WgRO9w7jjzyzLapm5x0FngG1LkuBRVfJrzmwHWSDjagWukQ4lBxCc6S9lGdl57tFneIJ62MzAbHT5mz42Hond6Fzeq7BvPKuVcTjwJgKu5WZthzX0U78iZZRKTvgpeDjvP9PG5VKyLbfCMJ9oLmALNW7Mtp1SkQvVSot2Y4GwkZsnaNqwInp5sS3WkF3pNFrf4UgahCxRZMhc09htJPlOU4SxO2TjbfYfgQWLcHOpTc-3W6jpxHN7UREA7Ky3bKxsrNHvZlHvgDF9tVMl1k2cxPFrg05ChDNfCBHxTMJOMLvAmZuvXb2aCqI0JC4374GgCxZ3zwxfhFSNFcbZVDJ-HgLReU_VCLH5US92J_qfQZq66FxTGs3LZFxGB_7gakikWvSqjGR_M6uq2glmZGO_EzUzqQ1Bc1ydAVj-aUp7ksuY5OfaacTZ1bqJZzz4E8CcZ8UbOwfBS9BK-3_cekVQLDuFYy780AGgbS7sCcBt7utneRFurdjluC77di1Fc_hzC9FejDu-Rb1gPbP6iYPHn1gLcj3g6AVY3xS2oZl431yvjaL6vA3mDSHlonhCtjIYK9Wp1mhyOh3pAJDzQHQd7n9FM_Q-hc0i24ji5HsAK8d7wQhV5DILvuQAZ6sPi0I_9al7V2B-eI3Y0Htdc2RyB7o6AxPn98XxYPFE6iibrj-VcMX_Ht2dljoGGEEpKgZSMyvVSViOiBNWQpoo6bPxInOsjtr4VAImD8FK4okoyOEMOXetRhA5VuNFgBG0uEFmCS1gM2il9Q1LJfE0Fg9KvQ9ZGw86u1VMlOt7KEIy91uaMLZiZ2zKbfj4yL_muXx0qcRDrA=s250-k-rw-no" alt="A birthday cake with candles"/> 
 		<!-- BIRTHDAY person picture -->
-		<img  HEIGHT='60' WIDTH='400' class="mx-auto mb-4 "  src="https://lh3.googleusercontent.com/pw/AP1GczNMl1ovNROAPDSeP6fG2wx15qcibWnV-eBovybdiXoxJ8sxkGTdhrSNPIw9WtEp5vww649idh5iaQhAhwa32QyAYmK0irqczaYE1B_cY9j7CSkzCzvt_o_ogFHZpRUpKuF_i8mzTN5B7CpW32EkIFdP8A=w622-h776-s-no-gm?authuser=0" alt="birthday person photo" />
+		<img  HEIGHT='60' WIDTH='400' class="mx-auto mb-4 "  src="https://lh3.googleusercontent.com/pw/AP1GczPgGbBY88F-_p0-RsIxytS6VC90SOj6dneQ3B4voxj1TiQQWJiQxVQ1F6WAoKV0c8We87a6fKiqbKKvpFcCVoQ_xG2JCZnw1fICqoL6IjL4PpFEleG7Me0Jq6YDwvOouJ0E_i2HR_zoRqcpmILM-JKL6g=w790-h790-s-no-gm?authuser=0" alt="birthday person photo" />
 		
-		<img  height="580" width="410" class="mx-auto mb-4 " src="https://lh3.googleusercontent.com/pw/AP1GczM5yr49OC1KITzrUy_xkO_xxClk1aCpHrA4CHLoM0nvl9uCHzD4TCRbuuqZZBJh7t2j2vXEgNpjJdw6mX-5UH_mIaJNytJpCcgHNFv0QlWtwPr9HvtIqaZ9kQhtp9TF7Yfv313fkJlR56fTKo1UJzn1=w491-h466-s-no-gm?authuser=0"/>
+		<img  height="580" width="410" class="mx-auto mb-4 " src="https://lh3.googleusercontent.com/pw/AP1GczMQGY27LbMMmluwaDM7mLpjp6yXj54d99BbfOKZ8wyPxBPNamFNWJi3m3zyiJJEAnlu_w3Gm4ntsDMq5MpIHKVaCSE6nfIAKmU0vZ-ekwuUE0xiG8ws4BRH2zd6VyHRfiCm8d6WRbDMWLLupxIVVxWF=w794-h811-s-no-gm?authuser=0"/>
     </div>
 	<br><br>
-	<div class="hover:bg-green-200">
+	<div class="hover:bg-purple-200">
 	
 		<h1 class="text-4xl font-bold mb-2 flicker">
 			🎈🌸 Happy Birthday to You 🌸🎈
 		</h1> 
 		
 		<h1 class="text-4xl font-bold text-yellow-400 mb-2">
-			💐🎉Happy Birthday to You, Rajanya  🎉💐
+			💐🎉Happy Birthday to You, Aditi  🎉💐
 		</h1>
 		
-		<h3 class="text-4xl font-bold text-white mb-2">
-			DOB: 13/09/2007
+		<h3 class="text-purple-400 text-4xl font-bold text-white mb-2">
+			DOB: 10/10/2002
 		</h3>	
 		
 		<h3 class="text-4xl font-bold text-green-700 mb-2">
-			Age: 18
+			Age: 23
 		</h3>
 	</div>
 	</section>
 <!-- Play song in website -->	
 <br><br>
-<!--<iframe id="myAudio"  class="bg-white-600 items-left-side" src="https://drive.google.com/file/d/1I5H64nWDzSl88Ms_hwAf7P1JiPQaqqsg/preview" width="300" height="60" allow=" autoplay" loop ></iframe> -->
+	<iframe id="myAudio"  class="bg-white-600 items-left-side" src="https://drive.google.com/file/d/1ZrURl5XWVC-i84cKnHuagHNs3WljzJgB/preview" width="300" height="60" allow="autoplay" ></iframe> 
+	
 <br><br>
 	<section class="text-center my-8" id="about">
 		<div class=" hover:bg-white">
@@ -306,7 +135,7 @@ canvas#confetti {
     <button id="button" class="button-53" role="button">click for Celebrate!!!</button>
 	
     <button class="btn btn-accent">
-     <a class="hover:bg-white text-4xl" href="" target="PDF">Gallery</a>
+     <a class="hover:bg-white text-4xl" href="https://drive.google.com/file/d/1W9boq8NGxjxcxUCP5votkhuCrUlvPkqy/view?usp=sharing" target="PDF">Gallery</a>
     </button> 
 	
    
@@ -316,21 +145,21 @@ canvas#confetti {
 			<!-- =======================================NEW SETUP  CREATE ================================================-->
 	
 			<div class="card bg-base-100 p-5 w-96 text-center hover:bg-yellow-400">
-				<!--<figure>
-					<img
-					src="https://lh3.googleusercontent.com/pw/AP1GczOAIfdLnEjLxvNK-pWl2F42Q3kgNkP-yiGeBi2-nryb5qk7_IrPG3b-XQDZ2YtzifEC9x-08O8EZt1plHBqoBhuOfQ_lgsHstb1N5tJTND64dut0sRZ12w451SicZnC514m4wRfRVj0TGxn8uISlvyuqw=w1152-h648-s-no-gm?authuser=0"
-					alt="picture1.0"
-					height="500"/>
-				</figure>--> <!-- use for dubale picture in one card -->
 				<figure>
 					<img
-					src="https://lh3.googleusercontent.com/pw/AP1GczMvmqwtm0Jl0yw4ZfdjI8APuJvYlXjaKf5NB_o9K_FXsMxC1cMVEmaHQj7UpGTL4DuquOmMp867mohsM4vqzWbIOgWh3opFuArQfA_la0ik42wRkr9sxcXI29e77a9y_DPGXZJwO2FZaSNhdihAYaxA=w1081-h811-s-no-gm?authuser=0"
+					src="https://lh3.googleusercontent.com/pw/AP1GczOyXbaPgPYIMD8i7A-NkDP46LZXuSnGMxDoObnQpJPYh4xud2yBWcrr5I9T26kI52SSZD2pveafYk9jkoODqc7BbKUEdvU5T4V4Tzo84W0sw15tKyskqjo_57Ami7gzTLaPLn2-YJ05fLX0TC1AQ3IcKQ=w1053-h790-s-no-gm?authuser=0"
+					alt="picture1.0"
+					height="500"/>
+				</figure> <!-- use for dubale picture in one card -->
+				<figure>
+					<img
+					src="https://lh3.googleusercontent.com/pw/AP1GczOqWls5Kpo3GsenOvBVUH1GTEKFt0xSqd6h9T20VovEN2X0u049-cfGizkXaRB7j13YnYX7Knh9xb_cBQo8Z3TkcpL_Ny_3cJVlTLjqgJhpLOj4EpWEXXyPVxgIzVoZTSQqqZQHVRw54PhWCwf7HKPFzw=w1404-h790-s-no-gm?authuser=0"
 					alt="picture1.1"
 					height="500"/>
 				</figure>
 				<div>
 					<h2 class="text-lg text-gray-700"><br>
-					   <b>Our Picnic 2017</b>
+					   <b>Our Picnic 2024-25</b>
 					</h2>
 				</div>
 			</div>  
@@ -462,44 +291,9 @@ canvas#confetti {
 	
 	
 	<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-	<script>
-
-		const button = document.querySelector('#button');
-		const canvas = document.querySelector('#confetti');
-
-		const jsConfetti = new JSConfetti();
-
-		button.addEventListener('click', () => {
-		jsConfetti.addConfetti({
-        emojis: ['Happy','🌈', '🎉','Birthday', '💥', '✨','to', '🎂', '🌸','you','💐'],
-		}).then(() => jsConfetti.addConfetti())
-		})
-
-	</script>
+	<script type="text/javascript" src="clebrate.js" async="async"></script>
 	
-	
-			<!--use for this script DATE AND TIME-->
-		<script>
-			function updateDateTime() {
-				const now = new Date();
-				const options = { 
-					year: 'numeric', 
-					month: 'long', //long
-					day: 'numeric', 
-					hour: '2-digit', 
-					minute: '2-digit', 
-					second: '2-digit',
-					hour24:  true
-				};
-				document.getElementById('dateTime').innerText = now.toLocaleString('en-US', options);
-			}
-
-			// Update the date and time immediately
-			updateDateTime();
-
-			// Update the date and time every second
-			setInterval(updateDateTime, 1000);
-		</script>
+<script type="text/javascript" src="clock.js" async="async"></script>
 
  </body>
 </html>
